@@ -4,7 +4,7 @@ export default function Analytics() {
     return (
         <>
           <Script
-            async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+            async src={`https://www.googletagmanager.com/gtag/js?id=G-84L4LLL6ZJ`}
           />
     
           <Script id='' strategy='lazyOnload'>
@@ -12,7 +12,7 @@ export default function Analytics() {
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}')
+                  gtag('config', 'G-84L4LLL6ZJ')
               `}
           </Script>
         </>
