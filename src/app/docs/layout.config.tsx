@@ -9,8 +9,7 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  * Docs Layout: app/docs/layout.tsx
  */
 export const baseOptions: BaseLayoutProps = {
-  // TODO: add your own links here
-  githubUrl: 'https://github.com/sunarjs/sunar',
+  githubUrl: 'https://github.com/Surajdusane/decent-docs',
   nav: {
     title: (
       <div className='flex justify-center items-center gap-2'>

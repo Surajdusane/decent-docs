@@ -1,12 +1,12 @@
 export const siteConfig = {
     name: "Decent Docs",
-    url: "https://ui.shadcn.com",
-    ogImage: "https://ui.shadcn.com/og.jpg",
+    url: "https://example.com",
+    ogImage: "/og-image.png",
     description:
-      "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+      "Developer docs help you to find the best YouTube tutorials, with direct timestamps, for the topic you are stuck on.",
     links: {
-      twitter: "https://twitter.com/shadcn",
-      github: "https://github.com/shadcn-ui/ui",
+      twitter: "ttps://example.com",
+      github: "https://github.com/Surajdusane/decent-docs",
     },
   }
   
