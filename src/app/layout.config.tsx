@@ -9,7 +9,6 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  * Docs Layout: app/docs/layout.tsx
  */
 export const baseOptions: BaseLayoutProps = {
-  githubUrl: 'https://github.com/Surajdusane/decent-docs',
   nav: {
     title: (
       <div className='flex justify-center items-center gap-2'>
