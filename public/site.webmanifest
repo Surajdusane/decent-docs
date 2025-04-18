@@ -1,0 +1,17 @@
+{
+    "name": "Decent Docs",
+    "short_name": "Decent",
+    "icons": [
+      {
+        "src": "/logos/black-logo.svg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/logos/black-logo.svg",
+        "sizes": "512x512"
+      }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
