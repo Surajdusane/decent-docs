@@ -4,6 +4,7 @@ import { RootProvider } from 'fumadocs-ui/provider';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Metadata, Viewport } from 'next';
+import Analytics from '@/components/global/analytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -82,7 +83,10 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <RootProvider theme={{
           defaultTheme: "system"
-        }}>{children}</RootProvider>
+        }}>
+          <Analytics />
+          {children}
+          </RootProvider>
       </body>
     </html>
   );
