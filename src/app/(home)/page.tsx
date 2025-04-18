@@ -1,19 +1,18 @@
-import Link from 'next/link';
+import FAQsSecrion from '@/components/home/faqs-section'
+import FeaturesSection from '@/components/home/featuress-section'
+import HeroSection from '@/components/home/hero-section'
+import StorySection from '@/components/home/story-section'
+import React from 'react'
 
-export default function HomePage() {
+const page = () => {
   return (
-    <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
-        You can open{' '}
-        <Link
-          href="/docs"
-          className="text-fd-foreground font-semibold underline"
-        >
-          /docs
-        </Link>{' '}
-        and see the documentation.
-      </p>
+    <main className='size-full scroll-smooth'>
+      <HeroSection/>
+      <StorySection />
+      <FeaturesSection />
+      <FAQsSecrion />
     </main>
-  );
+  )
 }
+
+export default page

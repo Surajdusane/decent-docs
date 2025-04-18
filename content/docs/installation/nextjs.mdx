@@ -1,0 +1,88 @@
+---
+title: Next.js
+description: Next.js is the React Framework for the Web.
+---
+
+## why choose react js insted of next js
+
+React is great. It's flexible, powerful, and super popular. But sometimes you need a bit more structure and built-in features to move faster and avoid setup headaches. That’s where **Next.js** comes in.
+
+import YouTubePreview from '@/components/mdx/youtube-preview';
+
+<YouTubePreview youtubeUrl='https://youtu.be/Zq5fmkH0T78?si=FkAVanAPniDZBkZR' startTime='06:22' endTime='10:13' />
+
+## Advantages of Next.js
+
+## 1. 📁 Easy Page Routing
+
+With React, you need to install and set up `react-router` to manage your routes. In Next.js, you just create a file inside the `pages/` folder, and that automatically becomes a route.
+
+**Example:**
+
+import { File, Folder, Files } from 'fumadocs-ui/components/files';
+
+<Files>
+  <Folder name="app" defaultOpen>
+  <Folder name="about" defaultOpen>
+    <File name="page.tsx" />
+  </Folder>
+  </Folder>
+</Files>
+
+- `about/page.js` → `yourapp.com/about`
+
+This makes routing simple and keeps your project organized from the start.
+
+---
+
+## 2. ⚡ Better Performance with SSR & SSG
+
+Next.js supports **Server-Side Rendering (SSR)** and **Static Site Generation (SSG)** out of the box.
+
+This means:
+- Your pages load faster
+- Content shows up sooner for users
+- Search engines can read your pages better (improved SEO)
+
+React only does client-side rendering by default, so you’d need extra tools to get the same result.
+
+---
+
+## 3. 🔧 Built-in API Routes
+
+Need a small backend or want to connect to a database? Next.js lets you create **API routes** directly inside your app. Just create a file in the `pages/api/` folder, and it becomes an endpoint.
+
+**Example:**
+- `pages/api/hello.js` → `yourapp.com/api/hello`
+
+This is perfect for small backend tasks without needing a separate server like Express.
+
+---
+
+## 4. ✅ Production-Ready Features
+
+Next.js gives you a lot of features out of the box:
+- Image optimization
+- Automatic code splitting
+- Fast refresh in development
+- Easy deployment with Vercel
+
+With React alone, you’d need to add and configure these features manually.
+
+---
+
+## 📌 Summary
+
+| Feature              | React           | Next.js            |
+|----------------------|------------------|---------------------|
+| Routing              | Manual setup     | File-based, built-in |
+| SSR/SSG              | Not included     | Built-in            |
+| API Routes           | Needs extra tools| Built-in            |
+| Production Features  | Manual setup     | Built-in            |
+
+---
+
+Next.js is built on top of React, so you’re not giving anything up — you’re just getting more tools to build faster and cleaner apps.
+
+Want help starting a Next.js project? Just let me know!
+

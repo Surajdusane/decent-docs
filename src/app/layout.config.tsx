@@ -1,3 +1,4 @@
+import Logo from '@/components/global/logo';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 
 /**
@@ -8,26 +9,21 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  * Docs Layout: app/docs/layout.tsx
  */
 export const baseOptions: BaseLayoutProps = {
+  // TODO: add your own links here
+  githubUrl: 'https://github.com/sunarjs/sunar',
   nav: {
     title: (
-      <>
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-label="Logo"
-        >
-          <circle cx={12} cy={12} r={12} fill="currentColor" />
-        </svg>
-        My App
-      </>
+      <div className='flex justify-center items-center gap-2'>
+        <Logo />
+      </div>
     ),
+    transparentMode: 'top',
   },
   links: [
-    {
-      text: 'Documentation',
-      url: '/docs',
-      active: 'nested-url',
-    },
-  ],
+		{
+			text: 'Documentation',
+			url: '/docs',
+			active: 'nested-url',
+		},
+	],
 };

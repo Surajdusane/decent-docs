@@ -1,13 +1,81 @@
 ---
-title: Hello World
-description: Your first document
+title: Introduction
+description: Why this documentation exists and how it helps you find the best YouTube coding tutorials — fast, timestamped, and frustration-free.
+icon: Rocket
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+import Image from 'next/image';
 
-## What is Next?
+<Image
+	src="/images/logo-card.png"
+	alt="Sunar simple banner"
+	width={1000}
+	height={500}
+	className="rounded-lg invert dark:invert-0"
+/>
+
+Welcome! If you’ve ever paused a 30-minute YouTube tutorial just to figure out if the video is even solving your problem... you're in the right place.
+This documentation was built for **developers like you** — full-stack builders, indie hackers, and learners who want real solutions _without wasting time_.
+
+
+## 🚀 Why I Built This
+
+I was tired of bouncing between official docs, long videos, and forums just to solve one bug. I'd spend hours watching tutorials that didn’t deliver, only to find the right answer hidden at minute 19 in a random comment.
+
+So I built this: a fast, focused place where you can search coding topics and get **high-quality YouTube tutorials with timestamped solutions** — no fluff, just answers.
+
+import {
+	Hourglass,
+	PanelTopDashed,
+	Search,
+	StepForward,
+	Code,
+} from 'lucide-react';
+
+## ✨ Key Features
+
+Explore the core functionalities that make Decent a powerful and versatile documentation for building full stack apps.
 
 <Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+	<Card
+		icon={<Search />}
+		title="Smart Search"
+		description=" Type your topic or problem, get exact videos that solve it."
+	/>
+	<Card
+		icon={<Hourglass />}
+		title="Time Stamped"
+		description="Jump right to the part of the video that matters."
+	/>
+	<Card
+		icon={<StepForward />}
+		title="Curated Content"
+		description="Only tutorials that are clear, clean, and up to standard."
+	/>
+	<Card
+		icon={<Code />}
+		title="Built For Devs"
+		description="Made by someone who’s been in your shoes (and lost hours in the tutorial rabbit hole)."
+	/>
 </Cards>
+
+## 🧠 Who This Is For
+
+- **You**, if you’ve ever wasted time on the wrong video
+- Beginners looking for guided explanations
+- Indie hackers moving fast on real projects
+- Full-stack developers learning new stacks or debugging weird issues
+
+---
+
+## 💡 What You Can Expect
+
+A simple interface. A fast way to find video answers. No ads, no fluff, no vague promises. Just **timestamped, relevant, hand-picked tutorials** to help you code better and learn faster.
+
+You’ve got better things to do than scrub through 45 minutes of someone setting up their font size.
+
+---
+
+<Callout emoji="👉" title="Sometimes packages receive major updates — some videos may use older versions, so always double-check for breaking changes in the official docs."/>
+
+Want to dive in? Try searching your first coding topic now.
