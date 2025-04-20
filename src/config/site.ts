@@ -5,7 +5,7 @@ export const siteConfig = {
     description:
       "Developer docs help you to find the best YouTube tutorials, with direct timestamps, for the topic you are stuck on.",
     links: {
-      twitter: "https://decent-docs.vercel.app/images/og-image.png",
+      twitter: "https://x.com/Sahilritusahilg",
       github: "",
     },
   }
