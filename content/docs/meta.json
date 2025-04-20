@@ -4,9 +4,54 @@
 		"index",
 		"daily-updates",
 
-		"---Installation & Overview---",
-		"installation/nextjs",
-		"installation/installation-nextjs",
+		"---Project Setup---",
+		"project-setup/package-manager",
+		"project-setup/next-js",
+		"project-setup/project-structure",
+		"project-setup/setting-up-type-script",
+		"project-setup/es-lint-and-prettier-setup-for-code-formatting",
+		"project-setup/git-initialization-and-best-practices",
+		"project-setup/creating-a-reusable-components-folder",
+		"project-setup/project-aliases",
+
+		"---Frontend Development (Comming Soon)---",
+
+		"---API & Backend Routes (Comming Soon)---",
+
+		"---State Management (Comming Soon)---",
+
+		"---Authentication & Authorization (Comming Soon)---",
+
+		"---Database Integration (Comming Soon)---",
+
+		"---API Consumption & Data Fetching (Comming Soon)---",
+
+		"---CRUD Operations (Comming Soon)---",
+
+		"---Sending Emails / Notifications (Comming Soon)---",
+
+		"---Testing & Debugging (Comming Soon)---",
+
+		"---Environment Variables & Configuration (Comming Soon)---",
+
+		"---Deployment & Hosting (Comming Soon)---",
+
+		"---Analytics & Monitoring (Comming Soon)---",
+
+		"---Performance Optimization (Comming Soon)---",
+
+		"---SEO & Meta Tags (Comming Soon)---",
+
+		"---Internationalization (i18n) (Comming Soon)---",
+
+		"---Version Control and Team Collaboration (Comming Soon)---",
+
+		"---Third-Party Integrations (Comming Soon)---",
+
+		"---Monorepo & Advanced Setup (Optional) (Comming Soon)---",
+
+		"---Real-World Use Cases / Projects (Comming Soon)---",
+
 
 		"---Contact---",
 		"[discord.js](https://discord.js.org)"

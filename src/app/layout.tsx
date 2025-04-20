@@ -1,14 +1,11 @@
 import { META_THEME_COLORS, siteConfig } from '@/config/site';
 import './global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
-import { Inter } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import type { ReactNode } from 'react';
 import { Metadata, Viewport } from 'next';
-import Analytics from '@/components/global/analytics';
 
-const inter = Inter({
-  subsets: ['latin'],
-});
+import Analytics from '@/components/global/analytics';
 
 export const metadata: Metadata = {
   title: {
@@ -79,7 +76,7 @@ export const viewport: Viewport = {
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider theme={{
           defaultTheme: "system"
