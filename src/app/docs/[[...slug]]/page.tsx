@@ -8,6 +8,7 @@ import {
 import { notFound } from 'next/navigation';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { getMDXComponents } from '@/mdx-components';
+import { absoluteUrl } from '@/lib/utils';
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -47,10 +48,37 @@ export async function generateMetadata(props: {
 }) {
   const params = await props.params;
   const page = source.getPage(params.slug);
+  const slugurl = params.slug?.join("/") || ""
   if (!page) notFound();
 
   return {
     title: page.data.title,
     description: page.data.description,
+    openGraph: {
+      title: page.data.title,
+      description: page.data.description,
+      type: "article",
+      url: absoluteUrl(slugurl),
+      images: [
+        {
+          url: `/og?title=${encodeURIComponent(
+            page.data.title
+          )}&description=${encodeURIComponent(page.data.description ? page.data.description as string : "")}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.data.title,
+      description: page.data.description,
+      images: [
+        {
+          url: `/og?title=${encodeURIComponent(
+            page.data.title
+          )}&description=${encodeURIComponent(page.data.description ? page.data.description as string : "")}`,
+        },
+      ],
+      creator: "@shadcn",
+    },
   };
 }

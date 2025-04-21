@@ -5,13 +5,13 @@ import { getTimeDifference } from "@/lib/utils";
 import { RefreshCw } from "lucide-react";
 import React, { useState } from 'react';
 
-interface YouTubePreviewProps {
+interface YTPProps {
   youtubeUrl: string;
   startTime?: string;
   endTime?: string;
 }
 
-const YouTubePreview: React.FC<YouTubePreviewProps> = ({
+const YTP: React.FC<YTPProps> = ({
   youtubeUrl,
   startTime = '0',
   endTime = ''
@@ -112,4 +112,4 @@ const YouTubePreview: React.FC<YouTubePreviewProps> = ({
   );
 };
 
-export default YouTubePreview;
+export default YTP;

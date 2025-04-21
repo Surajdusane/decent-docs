@@ -1,11 +1,22 @@
 import { META_THEME_COLORS, siteConfig } from '@/config/site';
 import './global.css';
 import { RootProvider } from 'fumadocs-ui/provider';
-import { GeistSans } from 'geist/font/sans';
+import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from 'react';
 import { Metadata, Viewport } from 'next';
 
 import Analytics from '@/components/global/analytics';
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
   title: {
@@ -76,7 +87,7 @@ export const viewport: Viewport = {
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider theme={{
           defaultTheme: "system"

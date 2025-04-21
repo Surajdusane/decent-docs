@@ -36,3 +36,7 @@ export function getTimeDifference(start: string, end: string): string {
 
   return `${hours}h ${minutes}m ${seconds}s`;
 }
+
+export function absoluteUrl(path: string) {
+  return `${process.env.NEXT_PUBLIC_APP_URL}${path}`
+}

@@ -8,9 +8,8 @@
 		"project-setup/package-manager",
 		"project-setup/next-js",
 		"project-setup/project-structure",
-		"project-setup/setting-up-type-script",
+		"project-setup/typescript",
 		"project-setup/es-lint-and-prettier-setup-for-code-formatting",
-		"project-setup/git-initialization-and-best-practices",
 		"project-setup/creating-a-reusable-components-folder",
 		"project-setup/project-aliases",
 
