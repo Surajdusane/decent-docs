@@ -1,6 +1,6 @@
 'use client';
 import { type ButtonHTMLAttributes } from 'react';
-import { SearchIcon } from 'lucide-react';
+import { Search } from '../icons';
 import { useSearchContext } from 'fumadocs-ui/contexts/search';
 import { useI18n } from 'fumadocs-ui/contexts/i18n';
 import { cn } from '../../lib/cn';
@@ -34,7 +34,7 @@ export function SearchToggle({
         setOpenSearch(true);
       }}
     >
-      <SearchIcon className="p-px" />
+      <Search className="p-px" />
     </button>
   );
 }
@@ -62,7 +62,7 @@ export function LargeSearchToggle({
         setOpenSearch(true);
       }}
     >
-      <SearchIcon className="ms-1 size-4" />
+      <Search className="ms-1 size-4" />
       {text.search}
       <div className="ms-auto inline-flex gap-0.5">
         {hotKey.map((k, i) => (

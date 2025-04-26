@@ -21,7 +21,7 @@ import {
   LanguageToggle,
   LanguageToggleText,
 } from '../layout/language-toggle';
-import { ChevronDown, Languages } from 'lucide-react';
+import { ChevronDown, Languages } from '../icons';
 import Link from 'fumadocs-core/link';
 import {
   Menu,
