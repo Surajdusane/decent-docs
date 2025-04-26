@@ -20,7 +20,6 @@ docs_structure = {
         "Tailwind CSS basics and component styling",
         "Building responsive design",
         "Conditional rendering",
-        "Reusable components",
         "Forms",
         "UI libraries",
         "Animations"
